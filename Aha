@@ -1,0 +1,3328 @@
+local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/AshleyCanis/Nothing-/refs/heads/main/J"))()
+
+local Window = redzlib:MakeWindow({"ARCHON HUB | BROOKHAVEN RP", "ByTeamCanis", "testando-redzLibv5.json"})
+            Window:AddMinimizeButton({
+              Button = { Image = redzlib:GetIcon("rbxassetid://18332052025"), BackgroundTransparency = 0 },
+              Corner = { CornerRadius = UDim.new(0, 6) }
+            })
+local Tab = Window:MakeTab({"UPDATE ", ""})
+
+
+Tab:AddSection({"Similar script Redz Hub "})
+Tab:AddSection({"The script contains pass values and many other things. "})
+
+Tab:AddSection({"English translator script by Ashley Canis developer "})
+
+Tab:AddSection({"Very special script explore it . "})
+Tab:AddSection({"ASHLEY CANIS THE BEST DEVELOPER"})
+
+
+
+local Tab = Window:MakeTab({"PLAYER", ""})
+
+Tab:AddTextBox({
+                Name = "SPEED PLAYER",
+                Description = "",
+                PlaceholderText = "16",
+                Callback = function(value) game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
+    end
+})
+
+Tab:AddTextBox({
+                Name = "JUMP POWER",
+                Description = "",
+                PlaceholderText = "16",
+                Callback = function(value) game.Players.LocalPlayer.Character.Humanoid.JumpPower = value    
+    end
+})
+
+Tab:AddTextBox({
+                Name = "FOV SCREEN",
+                Description = "",
+                PlaceholderText = "75",
+                Callback = function(value) 
+local FovNumber = value
+local Camera = workspace.CurrentCamera
+Camera.FieldOfView = FovNumber  
+    end
+})
+Tab:AddTextBox({
+                Name = "SPIN",
+                Description = "",
+                PlaceholderText = "1",
+                Callback = function(Value) 
+getgenv().Spinspeed = Value
+
+local Spin = Instance.new'BodyAngularVelocity'
+Spin.Parent = game:GetService'Players'.LocalPlayer.Character:FindFirstChild'HumanoidRootPart'
+Spin.MaxTorque = Vector3.new(0, math.huge, 100)
+wait(0.1)
+Spin.AngularVelocity = Vector3.new(100,Spinspeed,0)
+    end
+})
+
+Tab:AddButton({"KICK ALL | Fake kicks you out", function()
+                local player = game.Players.LocalPlayer
+        player:Kick("Is Mossadegh firing everyone?")
+            end})
+
+Tab:AddButton({"commander destroy the world", function()
+                game.Workspace:ClearAllChildren()
+            end})
+
+local Tab = Window:MakeTab({"INFO", ""})
+
+Tab:AddButton({"TIK TOK DEVELOPER", function()
+setclipboard('ai99._2')
+            end})
+
+
+Tab:AddButton({"TELEGRAM CHANNEL DEVELOPER", function()
+setclipboard('https://t.me/AshleySaif')
+            end})
+
+
+
+Tab:AddButton({" ROBLOX ACCOUNT DEVELOPER", function()
+setclipboard('qatre345')
+            end})
+
+
+
+local Tab = Window:MakeTab({"GAMEPASSES", ""})
+
+  Tab:AddButton({"VIP FREE GAMEPASS", function()
+local lib = {
+	['notification'] = loadstring(game:HttpGetAsync("https://pastefy.app/nXmxy6M0/raw"))(),
+	['cooldown'] = false,
+	['username'] = 'unknown',
+	['bw'] = 'unknown'
+}
+
+lib.notification:message{
+	Title = "ARCHON Hub Notification",
+	Description = "Got Vip Gamepass!",
+	Icon = 85102932341647
+}
+ game:GetService("Players").LocalPlayer.PlayersBag.VIP.Value = true
+  end})
+Tab:AddButton({"PREMIUM FREE GAMEPASS", function()
+local lib = {
+	['notification'] = loadstring(game:HttpGetAsync("https://pastefy.app/nXmxy6M0/raw"))(),
+	['cooldown'] = false,
+	['username'] = 'unknown',
+	['bw'] = 'unknown'
+}
+
+lib.notification:message{
+	Title = "ARCHON Hub Notification",
+	Description = "Got Premium Gamepass!",
+	Icon = 100893456751976
+}
+game:GetService("Players").LocalPlayer.PlayersBag.SilverPass.Value = true
+  end})
+Tab:AddButton({"SPEED FREE GAMEPASS", function()
+ local lib = {
+	['notification'] = loadstring(game:HttpGetAsync("https://pastefy.app/nXmxy6M0/raw"))(),
+	['cooldown'] = false,
+	['username'] = 'unknown',
+	['bw'] = 'unknown'
+}
+
+lib.notification:message{
+	Title = "ARCHON Hub Notification",
+	Description = "Got Speed Gamepass!",
+	Icon = 127553905855586
+}
+ game:GetService("Players").LocalPlayer.PlayersBag.SpeedPass200.Value = true
+  end})
+Tab:AddButton({"MUSIC FREE GAMEPASS", function()
+local lib = {
+	['notification'] = loadstring(game:HttpGetAsync("https://pastefy.app/nXmxy6M0/raw"))(),
+	['cooldown'] = false,
+	['username'] = 'unknown',
+	['bw'] = 'unknown'
+}
+
+lib.notification:message{
+	Title = "ARCHON Hub Notification",
+	Description = "Got Music Gamepass!",
+	Icon = 77765073982300
+}
+ game:GetService("Players").LocalPlayer.PlayersBag.MusicPass.Value = true
+  end})
+Tab:AddButton({"HORSE FREE GAMEPASS", function()
+ local lib = {
+	['notification'] = loadstring(game:HttpGetAsync("https://pastefy.app/nXmxy6M0/raw"))(),
+	['cooldown'] = false,
+	['username'] = 'unknown',
+	['bw'] = 'unknown'
+}
+
+lib.notification:message{
+	Title = "ARCHON Hub Notification",
+	Description = "Got Horse Gamepass!",
+	Icon = 127553905855586
+}
+ game:GetService("Players").LocalPlayer.PlayersBag.HorsePass.Value = true
+  end})
+Tab:AddButton({"VehiclePack FREE GAMEPASS", function()
+ local lib = {
+	['notification'] = loadstring(game:HttpGetAsync("https://pastefy.app/nXmxy6M0/raw"))(),
+	['cooldown'] = false,
+	['username'] = 'unknown',
+	['bw'] = 'unknown'
+}
+
+lib.notification:message{
+	Title = "ARCHON Hub Notification",
+	Description = "Got VehiclePack Gamepass!",
+	Icon = 127553905855586
+}
+ game:GetService("Players").LocalPlayer.PlayersBag.VehiclePackPass.Value = true
+  end})
+Tab:AddButton({"Mansion FREE GAMEPASS", function()
+ local lib = {
+	['notification'] = loadstring(game:HttpGetAsync("https://pastefy.app/nXmxy6M0/raw"))(),
+	['cooldown'] = false,
+	['username'] = 'unknown',
+	['bw'] = 'unknown'
+}
+
+lib.notification:message{
+	Title = "ARCHON Hub Notification",
+	Description = "Got Mansion Gamepass!",
+	Icon = 127553905855586
+}
+ game:GetService("Players").LocalPlayer.PlayersBag.MansionPass.Value = true
+  end})
+Tab:AddButton({"FACE FREE GAMEPASS", function()
+ local lib = {
+	['notification'] = loadstring(game:HttpGetAsync("https://pastefy.app/nXmxy6M0/raw"))(),
+	['cooldown'] = false,
+	['username'] = 'unknown',
+	['bw'] = 'unknown'
+}
+
+lib.notification:message{
+	Title = "ARCHON Hub Notification",
+	Description = "Got Face Gamepass!",
+	Icon = 127553905855586
+}
+ game:GetService("Players").LocalPlayer.PlayersBag.FacePass.Value = true
+  end})
+Tab:AddButton({"DISASTER FREE GAMEPASS", function()
+ local lib = {
+	['notification'] = loadstring(game:HttpGetAsync("https://pastefy.app/nXmxy6M0/raw"))(),
+	['cooldown'] = false,
+	['username'] = 'unknown',
+	['bw'] = 'unknown'
+}
+
+lib.notification:message{
+	Title = "ARCHON Hub Notification",
+	Description = "Got Disaster Gamepass!",
+	Icon = 127553905855586
+}
+ game:GetService("Players").LocalPlayer.PlayersBag.DisasterPass.Value = true
+  end})
+Tab:AddButton({"BOAT FREE GAMEPASS", function()
+ local lib = {
+	['notification'] = loadstring(game:HttpGetAsync("https://pastefy.app/nXmxy6M0/raw"))(),
+	['cooldown'] = false,
+	['username'] = 'unknown',
+	['bw'] = 'unknown'
+}
+
+lib.notification:message{
+	Title = "ARCHON Hub Notification",
+	Description = "Got Boat Gamepass!",
+	Icon = 127553905855586
+}
+ game:GetService("Players").LocalPlayer.PlayersBag.BoatPass.Value = true
+  end})
+Tab:AddButton({"PAINT FREE GAMEPASS", function()
+ local lib = {
+	['notification'] = loadstring(game:HttpGetAsync("https://pastefy.app/nXmxy6M0/raw"))(),
+	['cooldown'] = false,
+	['username'] = 'unknown',
+	['bw'] = 'unknown'
+}
+
+lib.notification:message{
+	Title = "ARCHON Hub Notification",
+	Description = "Got PentHouse Gamepass!",
+	Icon = 127553905855586
+}
+ game:GetService("Players").LocalPlayer.PlayersBag.PenthousePass.Value = true
+  end})
+Tab:AddButton({"FIRE FREE GAMEPASS", function()
+ local lib = {
+	['notification'] = loadstring(game:HttpGetAsync("https://pastefy.app/nXmxy6M0/raw"))(),
+	['cooldown'] = false,
+	['username'] = 'unknown',
+	['bw'] = 'unknown'
+}
+
+lib.notification:message{
+	Title = "ARCHON Hub Notification",
+	Description = "Got Fire Gamepass!",
+	Icon = 127553905855586
+}
+ game:GetService("Players").LocalPlayer.PlayersBag.FirePass.Value = true
+ end})
+Tab:AddButton({"THEME FREE GAMEPASS", function()
+ local lib = {
+	['notification'] = loadstring(game:HttpGetAsync("https://pastefy.app/nXmxy6M0/raw"))(),
+	['cooldown'] = false,
+	['username'] = 'unknown',
+	['bw'] = 'unknown'
+}
+
+lib.notification:message{
+	Title = "ARCHON Hub Notification",
+	Description = "Got Theme Gamepass!",
+	Icon = 127553905855586
+}
+ game:GetService("Players").LocalPlayer.PlayersBag.ThemePass.Value = true
+ end})
+
+local Tab = Window:MakeTab({"FUN", ""})
+Tab:AddSection({"FLING V1"})
+
+local players = {"..."}
+
+for _, player in pairs(game.Players:GetPlayers()) do
+    table.insert(players, player.Name)
+end
+Tab:AddDropdown({
+  Name = "Choose a player",
+  Description = "",
+  Options = players,
+  Default = "1",
+  Flag = "dropdown teste",
+  Callback = function(Value)
+    getgenv().selectedPlayer = Value
+  end
+})
+Tab:AddButton({"fling player", function()
+                local selectedPlayer = getgenv().selectedPlayer  -- تأكد من أن اسم اللاعب الذي تم اختياره موجود هنا
+        local player = game.Players.LocalPlayer  -- هذه هي شخصيتك
+
+        if selectedPlayer then
+            local targetPlayer = game.Players:FindFirstChild(selectedPlayer)  -- إيجاد اللاعب الذي تم اختياره
+
+            if targetPlayer then
+                -- نقل الأداة "Couch" من الـ Backpack إلى الشخصية في كل مرة يتم الضغط فيها على الزر
+                local couchInBackpack = nil
+                -- التحقق إذا كانت الأداة "Couch" موجودة في الـ Backpack
+                for _, item in pairs(player.Backpack:GetChildren()) do
+                    if item.Name == "Couch" then
+                        couchInBackpack = item
+                        break
+                    end
+                end
+
+                -- إذا كانت الأداة "Couch" موجودة في الـ Backpack، نقوم بنقلها إلى الـ Character
+                if couchInBackpack then
+                    couchInBackpack.Parent = player.Character  -- نقل الأداة إلى الشخصية
+                    print("تم نقل الأداة 'Couch' إلى الشخصية.")
+                else
+                    -- إذا كانت الأداة "Couch" غير موجودة في الـ Backpack، نقوم بتفعيلها
+                    local args = {[1] = "PickingTools", [2] = "Couch"}
+                    game:GetService("ReplicatedStorage").RE:FindFirstChild("1Too1l"):InvokeServer(unpack(args))
+                    print("تم تفعيل الأداة: Couch")
+                end
+
+                -- الانتقال إلى اللاعب المحدد (الذي تم اختياره) ولكن مع تعديل الموقع ليكون تحت اللاعب قليلاً
+                if targetPlayer.Character and targetPlayer.Character.PrimaryPart then
+                    -- تعديل موقع CFrame بحيث تكون الشخصية الخاصة بك تحت اللاعب قليلاً
+                    local targetPosition = targetPlayer.Character.PrimaryPart.Position
+                    local newPosition = targetPosition - Vector3.new(0, 5, 0)  -- تقليل الإحداثيات في المحور Y ليكون تحت اللاعب قليلاً
+                    game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(CFrame.new(newPosition))
+                    print("تم الانتقال إلى: " .. selectedPlayer)
+                end
+
+                -- دوران الشخصية بشكل متقلب وكامل حول جميع المحاور
+                local startTime = tick()  -- وقت البداية
+                local oscillationTime = 0  -- وقت التذبذب
+                while tick() - startTime < .6 do  -- التكرار لمدة 2 ثانية
+                    if player.Character and player.Character.PrimaryPart then
+                        -- تدوير الشخصية بشكل سريع حول المحاور الثلاثة (X، Y، Z) ليكون مثل حركة "Fling"
+                        player.Character:SetPrimaryPartCFrame(player.Character.PrimaryPart.CFrame * CFrame.Angles(
+                            math.rad(math.random(500, 1000)),  -- تدوير عشوائي حول محور X
+                            math.rad(math.random(500, 1000)),  -- تدوير عشوائي حول محور Y
+                            math.rad(math.random(500, 1000))   -- تدوير عشوائي حول محور Z
+                        ))
+
+                        -- تحريك الشخصية للأعلى والأسفل (التذبذب)
+                        local yOffset = math.sin(oscillationTime) * 5  -- استخدام sin للتذبذب
+                        player.Character:SetPrimaryPartCFrame(player.Character.PrimaryPart.CFrame * CFrame.new(0, yOffset, 0))
+                        oscillationTime = oscillationTime + 0.1  -- زيادة الزمن لجعل التذبذب مستمر
+                    end
+                    wait(0.001)  -- الانتظار لمدة 0.01 ثانية لضمان سلاسة الحركة
+                end
+
+                -- الانتظار لمدة 0.5 ثانية قبل التحرك إلى مكان بعيد
+                wait(0.5)
+
+                -- تحريك الشخصية إلى مكان بعيد جدًا خارج الماب
+                local outsideMapPosition = Vector3.new(10000, 0, 10000)  -- تغيير القيم لهذه النقطة بعيدة
+                game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(CFrame.new(outsideMapPosition))
+                print("تم نقل الشخصية إلى مكان بعيد.")
+
+                -- الانتظار لمدة قصيرة قبل العودة
+                wait(0.5)
+
+                -- بعد العودة من المكان البعيد، نبحث عن الأداة "Couch" في الشخصية
+                local couchInCharacter = nil
+                if player.Character then
+                    for _, item in pairs(player.Character:GetChildren()) do
+                        if item.Name == "Couch" then
+                            couchInCharacter = item
+                            break
+                        end
+                    end
+                end
+
+                -- إذا كانت الأداة "Couch" موجودة في الشخصية، نقوم بإرجاعها إلى الـ Backpack
+                if couchInCharacter then
+                    couchInCharacter.Parent = player.Backpack  -- إرجاع الأداة إلى الـ Backpack
+                    print("تم إعادة الأداة 'Couch' إلى الـ Backpack.")
+                end
+
+                -- العودة إلى المكان الأصلي
+                if targetPlayer.Character and targetPlayer.Character.PrimaryPart then
+                    local returnPosition = targetPlayer.Character.PrimaryPart.Position - Vector3.new(0, 5, 0)  -- العودة إلى مكان تحت اللاعب
+                    game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(CFrame.new(returnPosition))
+                    print("تم العودة إلى المكان الأصلي.")
+                end
+            end
+        end
+            end})
+Tab:AddSection({"FLING V2 "})
+ local selectedKillAdvancedPlayer = nil
+local couchEquipped = false
+
+local function killAdvancedPlayer()
+if selectedKillAdvancedPlayer then
+local player = game.Players:FindFirstChild(selectedKillAdvancedPlayer)
+if player then
+-- Equipa o item 'Couch' no inventário se ainda não estiver equipado
+local backpack = game.Players.LocalPlayer.Backpack
+if backpack and not couchEquipped then
+local couch = backpack:FindFirstChild("Couch")
+if couch then
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(couch)
+couchEquipped = true
+else
+print("O item 'Couch' não foi encontrado no seu inventário.")
+end
+end
+
+-- Looping de teleportes no jogador selecionado da lista
+while true do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = player.Character.HumanoidRootPart.CFrame
+wait(0.0) -- Intervalo entre cada teleporte, ajuste conforme necessário
+
+-- Verifica se o jogador sentou no 'Couch' e realiza o teleporte para o céu
+if player.Character:FindFirstChild("Humanoid") and player.Character.Humanoid.SeatPart then
+player.Character.HumanoidRootPart.CFrame = CFrame.new(0, 0, 0) -- Teleporta para cima
+wait(0.0) -- Espera um pouco antes de teleportar de volta para evitar bugs
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, 0, 0) -- Teleporta para cima novamente
+wait(0.0) -- Espera um pouco antes de teleportar de volta para evitar bugs
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(649.78, -439.87, 126.35) -- Teleporta de volta para a posição original
+break -- Sai do loop após teleportar de volta
+end
+end
+
+-- Remove o item 'Couch' da mão do jogador após o teleporte para o céu
+if couchEquipped then
+local backpack = game.Players.LocalPlayer.Backpack
+if backpack then
+local couch = backpack:FindFirstChild("Couch")
+if couch then
+couch.Parent = nil -- Remove o 'Couch' do inventário
+couchEquipped = false
+end
+end
+end
+else
+print("Jogador não encontrado.")
+end
+else
+print("Nenhum jogador selecionado para o Bring Avançado.")
+end
+end
+
+-- Lista de Players para Bring Avançado
+local killAdvancedPlayerList = {}
+for _, player in ipairs(game.Players:GetPlayers()) do
+table.insert(killAdvancedPlayerList, player.Name)
+end
+
+Tab:AddDropdown({
+  Name = "Choose the player",
+  Description = "",
+  Options = killAdvancedPlayerList,
+  Default = "",
+  Flag = "dropdown teste",
+Callback = function(playerName)
+selectedKillAdvancedPlayer = playerName
+end
+})
+
+Tab:AddButton({"FLING PLAYER", function()
+                killAdvancedPlayer()
+            end})
+
+
+Tab:AddSection({"FLING V3 "})
+
+-- Serviços necessários
+local playerService = game:GetService('Players')
+local runService = game:GetService('RunService')
+local player = playerService.LocalPlayer
+
+-- Variáveis globais
+local selectedPlayer = nil
+local selectedKillAdvancedPlayer = nil
+local couchEquipped = false
+local playerDropdownV13
+
+-- Função para obter a lista de jogadores
+local function getPlayerList()
+    local playerList = {}
+    for _, player in ipairs(playerService:GetPlayers()) do
+        if player ~= playerService.LocalPlayer then
+            table.insert(playerList, player.Name)
+        end
+    end
+    return playerList
+end
+
+-- Função para atualizar o dropdown
+local function updateDropdown(dropdown)
+    UpdateDropdown(dropdown, getPlayerList())
+end
+
+-- Função para encontrar jogador por nome
+local function gplr(String)
+    local strl = String:lower()
+    local Found = {}
+    for _, v in pairs(playerService:GetPlayers()) do
+        if v.Name:lower():sub(1, #strl) == strl then
+            table.insert(Found, v)
+        end
+    end
+    return Found
+end
+
+-- Função para flingar jogador (V13)
+local function flingPlayer(targetName)
+    local Target = gplr(targetName)
+    if Target[1] then
+        Target = Target[1]
+        
+        local Thrust = Instance.new('BodyThrust', player.Character.HumanoidRootPart)
+        Thrust.Force = Vector3.new(999, 999, 999)
+        Thrust.Name = "FlingForce"
+        repeat
+            player.Character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame
+            Thrust.Location = Target.Character.HumanoidRootPart.Position
+            runService.Heartbeat:Wait()
+        until not Target.Character:FindFirstChild("Head")
+    end
+end
+
+-- Interface para Fling V13
+playerDropdownV13 = Tab:AddDropdown({
+  Name = "Choose the player",
+  Description = "",
+  Options = getPlayerList(),
+  Default = "",
+  Flag = "dropdown teste",
+    Callback = function(value)
+        selectedPlayer = value
+    end
+})
+
+Tab:AddButton({"FLING PLAYER", function()
+                if selectedPlayer then
+            flingPlayer(selectedPlayer)
+        end
+            end})
+        Tab:AddSection({"FLING BY BUS"})
+local Players = game:GetService("Players")
+local Workspace = game:GetService("Workspace")
+local RunService = game:GetService("RunService")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local selectedPlayerName = nil
+local destination = Vector3.new(265.46, -450.83, -59.93)
+local originalPosition = nil
+
+local playerNames = {}
+for _, player in pairs(Players:GetPlayers()) do
+    table.insert(playerNames, player.Name)
+end
+
+local selectedPlayerName = nil
+
+local Dropdown = Tab:AddDropdown({
+  Name = "Choose the player",
+  Description = "",
+  Options = playerNames,
+  Default = "...",
+  Flag = "",
+    Callback = function(selected)
+        selectedPlayerName = selected
+    end
+})
+
+Tab:AddButton({"Killed by bus", function()
+        if not selectedPlayerName then
+            print("Nenhum jogador selecionado!")
+            return
+        end
+
+        local player = Players.LocalPlayer    
+        local character = player.Character or player.CharacterAdded:Wait()    
+        local humanoidRootPart = character:WaitForChild("HumanoidRootPart")    
+
+        -- Armazena a posição inicial do player antes do fling    
+        originalPosition = humanoidRootPart.CFrame    
+
+        -- Função para obter o ônibus    
+        local function GetBus()    
+            local vehicles = Workspace:FindFirstChild("Vehicles")    
+            if vehicles then    
+                return vehicles:FindFirstChild(player.Name.."Car")    
+            end    
+            return nil    
+        end    
+
+        local bus = GetBus()    
+
+        -- Se o ônibus não existir, tenta spawnar um    
+        if not bus then    
+            humanoidRootPart.CFrame = CFrame.new(1118.81, 75.998, -1138.61)    
+            task.wait(0.5)    
+            local remoteEvent = ReplicatedStorage:FindFirstChild("RE")    
+            if remoteEvent and remoteEvent:FindFirstChild("1Ca1r") then    
+                remoteEvent["1Ca1r"]:FireServer("PickingCar", "SchoolBus")    
+            end    
+            task.wait(1)    
+            bus = GetBus()    
+        end    
+
+        -- Se conseguiu spawnar, tenta sentar no banco do motorista    
+        if bus then    
+            local seat = bus:FindFirstChild("Body") and bus.Body:FindFirstChild("VehicleSeat")    
+            if seat and character:FindFirstChildOfClass("Humanoid") and not character.Humanoid.Sit then    
+                repeat    
+                    humanoidRootPart.CFrame = seat.CFrame * CFrame.new(0, 2, 0)    
+                    task.wait()    
+                until character.Humanoid.Sit or not bus.Parent    
+            end    
+        end    
+
+        -- Sistema para seguir o jogador e detectar quando ele estiver sentado    
+        local function TrackPlayer()    
+            while true do    
+                if selectedPlayerName then    
+                    local targetPlayer = Players:FindFirstChild(selectedPlayerName)    
+                    if targetPlayer and targetPlayer.Character and targetPlayer.Character:FindFirstChild("HumanoidRootPart") then    
+                        local targetHumanoid = targetPlayer.Character:FindFirstChildOfClass("Humanoid")    
+                        if targetHumanoid and targetHumanoid.Sit then    
+                            -- Quando o jogador senta, execute o pulo imediatamente    
+                            if character.Humanoid then    
+                                -- Leva o ônibus para a coordenada do "void"    
+                                bus:SetPrimaryPartCFrame(CFrame.new(destination)) -- Movendo para o void    
+                                print("Jogador sentou, levando ônibus para a coordenada!")    
+
+                                -- Espera 0.2 segundos após levar o ônibus para o void antes de fazer o pulo    
+                                task.wait(0.2)    
+
+                                -- Simula o clique no botão de pulo do Roblox    
+                                local function simulateJump()    
+                                    local humanoid = player.Character and player.Character:FindFirstChildWhichIsA("Humanoid")    
+                                    if humanoid then    
+                                        humanoid:ChangeState(Enum.HumanoidStateType.Jumping)    
+                                    end    
+                                end    
+
+                                -- Simulando o pulo    
+                                simulateJump()    
+
+                                print("Simulando clique no botão de pulo!")    
+
+                                -- Após o pulo, teleportar o player para a posição inicial    
+                                task.wait(0.5)    
+                                humanoidRootPart.CFrame = originalPosition    
+                                print("Player teletransportado para a posição inicial!")    
+                            end    
+
+                            break    
+                        else    
+                            -- Seguir o jogador, movendo o ônibus rápido    
+                            local targetRoot = targetPlayer.Character.HumanoidRootPart    
+                            local offset = math.sin(tick() * 32) * 8    
+                            bus:SetPrimaryPartCFrame(targetRoot.CFrame * CFrame.new(0, 0, -2) * CFrame.new(offset, 0, -2))  
+                        end    
+                    end    
+                end    
+                RunService.RenderStepped:Wait()    
+            end    
+        end    
+
+        -- Inicia o rastreamento    
+        spawn(TrackPlayer)    
+    end})
+Tab:AddSection({"FLING BY SHIP "})
+local Players = game:GetService("Players")
+local Workspace = game:GetService("Workspace")
+local RunService = game:GetService("RunService")
+
+local playerNames = {}
+for _, player in pairs(Players:GetPlayers()) do
+    table.insert(playerNames, player.Name)
+end
+
+local selectedPlayerName = nil
+
+local Dropdown = Tab:AddDropdown({
+  Name = "Choose the player",
+  Description = "",
+  Options = playerNames,
+  Default = "",
+  Flag = "",
+Callback = function(selected)
+        selectedPlayerName = selected
+    end
+})
+
+local function executeScript()
+    local UserInputService = game:GetService("UserInputService")
+    local Mouse = game.Players.LocalPlayer:GetMouse()
+    local Folder = Instance.new("Folder", Workspace)
+    local Part = Instance.new("Part", Folder)
+    local Attachment1 = Instance.new("Attachment", Part)
+    Part.Anchored = true
+    Part.CanCollide = false
+    Part.Transparency = 1
+
+    local NetworkAccess = coroutine.create(function()
+        settings().Physics.AllowSleep = false
+        while RunService.RenderStepped:Wait() do
+            for _, player in next, Players:GetPlayers() do
+                if player ~= Players.LocalPlayer then
+                    player.MaximumSimulationRadius = 0
+                    sethiddenproperty(player, "SimulationRadius", 0)
+                end
+            end
+            Players.LocalPlayer.MaximumSimulationRadius = math.pow(math.huge, math.huge)
+            setsimulationradius(math.huge)
+        end
+    end)
+    coroutine.resume(NetworkAccess)
+
+    local function ForceVehicle(v)
+        if v:IsA("Model") and v:FindFirstChildOfClass("VehicleSeat") then
+            Mouse.TargetFilter = v
+            for _, x in next, v:GetDescendants() do
+                if x:IsA("BodyAngularVelocity") or x:IsA("BodyForce") or x:IsA("BodyGyro") or x:IsA("BodyPosition") or x:IsA("BodyThrust") or x:IsA("BodyVelocity") or x:IsA("RocketPropulsion") then
+                    x:Destroy()
+                end
+            end
+            if v:FindFirstChild("Attachment") then
+                v:FindFirstChild("Attachment"):Destroy()
+            end
+            if v:FindFirstChild("AlignPosition") then
+                v:FindFirstChild("AlignPosition"):Destroy()
+            end
+            if v:FindFirstChild("Torque") then
+                v:FindFirstChild("Torque"):Destroy()
+            end
+            for _, part in next, v:GetDescendants() do
+                if part:IsA("BasePart") then
+                    part.CanCollide = false
+                    local Torque = Instance.new("Torque", part)
+                    Torque.Torque = Vector3.new(100000 * 12, 100000 * 12, 100000 * 12)
+                    local AlignPosition = Instance.new("AlignPosition", part)
+                    local Attachment2 = Instance.new("Attachment", part)
+                    Torque.Attachment0 = Attachment2
+                    AlignPosition.MaxForce = 999999
+                    AlignPosition.MaxVelocity = math.huge
+                    AlignPosition.Responsiveness = 200
+                    AlignPosition.Attachment0 = Attachment2
+                    AlignPosition.Attachment1 = Attachment1
+                end
+            end
+        end
+    end
+
+    for _, v in next, Workspace:GetDescendants() do
+        ForceVehicle(v)
+    end
+
+    Workspace.DescendantAdded:Connect(function(v)
+        ForceVehicle(v)
+    end)
+
+    spawn(function()
+        while true do
+            local voidPosition = Vector3.new(101, -446, -180)
+            Attachment1.WorldCFrame = CFrame.new(voidPosition)
+            RunService.RenderStepped:Wait()
+        end
+    end)
+end
+
+local function monitorSeats()
+    for _, seat in pairs(Workspace:GetDescendants()) do
+        if seat:IsA("Seat") or seat:IsA("VehicleSeat") then
+            seat:GetPropertyChangedSignal("Occupant"):Connect(function()
+                if seat.Occupant then
+                    local occupantPlayer = Players:GetPlayerFromCharacter(seat.Occupant.Parent)
+                    if occupantPlayer and occupantPlayer.Name == selectedPlayerName then
+                        executeScript()
+                    end
+                end
+            end)
+        end
+    end
+
+    Workspace.DescendantAdded:Connect(function(descendant)
+        if descendant:IsA("Seat") or descendant:IsA("VehicleSeat") then
+            descendant:GetPropertyChangedSignal("Occupant"):Connect(function()
+                if descendant.Occupant then
+                    local occupantPlayer = Players:GetPlayerFromCharacter(descendant.Occupant.Parent)
+                    if occupantPlayer and occupantPlayer.Name == selectedPlayerName then
+                        executeScript()
+                    end
+                end
+            end)
+        end
+    end)
+end
+
+monitorSeats()
+Tab:AddButton({"Killed By Ship", function()
+local Player = game.Players.LocalPlayer
+local Character = Player.Character or Player.CharacterAdded:Wait()
+local Humanoid = Character:FindFirstChildOfClass("Humanoid")
+local RootPart = Character:WaitForChild("HumanoidRootPart")
+local Vehicles = game.Workspace:FindFirstChild("Vehicles")
+local OldPos = RootPart.CFrame
+
+if not Humanoid or not Vehicles then return end
+
+local function GetCar()
+    return Vehicles:FindFirstChild(Player.Name.."Car")
+end
+
+local PCar = GetCar()
+
+if not PCar then
+    RootPart.CFrame = CFrame.new(25.9511604, 4.09631968, 1581.40173, 0.0186735559, -3.64394381e-08, 0.999825656, -8.91815333e-09, 1, 3.66123558e-08, -0.999825656, -9.60028146e-09, 0.0186735559)  
+    task.wait(0.5)
+    local RemoteEvent = game:GetService("ReplicatedStorage"):FindFirstChild("RE")
+    if RemoteEvent and RemoteEvent:FindFirstChild("1Ca1r") then
+        RemoteEvent["1Ca1r"]:FireServer("PickingBoat", "PirateFree")
+    end
+    task.wait(1)
+    PCar = GetCar()
+end
+
+if PCar then
+    local Seat = PCar:FindFirstChild("Body") and PCar.Body:FindFirstChild("VehicleSeat")
+    if Seat and not Humanoid.Sit then
+        repeat
+            RootPart.CFrame = Seat.CFrame * CFrame.new(0, math.random(-1, 1), 0)
+            task.wait()
+        until Humanoid.Sit or not PCar.Parent
+    end
+end
+        wait(0.2)
+
+        local UserInputService = game:GetService("UserInputService")
+        local RunService = game:GetService("RunService")
+        local Mouse = Players.LocalPlayer:GetMouse()
+        local Folder = Instance.new("Folder", game:GetService("Workspace"))
+        local Part = Instance.new("Part", Folder)
+        local Attachment1 = Instance.new("Attachment", Part)
+        Part.Anchored = true
+        Part.CanCollide = false
+        Part.Transparency = 1
+
+        local NetworkAccess = coroutine.create(function()
+            settings().Physics.AllowSleep = false
+            while RunService.RenderStepped:Wait() do
+                for _, player in next, Players:GetPlayers() do
+                    if player ~= Players.LocalPlayer then
+                        player.MaximumSimulationRadius = 0
+                        sethiddenproperty(player, "SimulationRadius", 2)
+                    end
+                end
+                Players.LocalPlayer.MaximumSimulationRadius = math.pow(math.huge, math.huge)
+                setsimulationradius(math.huge)
+            end
+        end)
+        coroutine.resume(NetworkAccess)
+
+        local function ForceVehicle(v)
+            if v:IsA("Model") and v:FindFirstChildOfClass("VehicleSeat") then
+                Mouse.TargetFilter = v
+                for _, x in next, v:GetDescendants() do
+                    if x:IsA("BodyAngularVelocity") or x:IsA("BodyForce") or x:IsA("BodyGyro") or x:IsA("BodyPosition") or x:IsA("BodyThrust") or x:IsA("BodyVelocity") or x:IsA("RocketPropulsion") then
+                        x:Destroy()
+                    end
+                end
+                if v:FindFirstChild("Attachment") then
+                    v:FindFirstChild("Attachment"):Destroy()
+                end
+                if v:FindFirstChild("AlignPosition") then
+                    v:FindFirstChild("AlignPosition"):Destroy()
+                end
+                if v:FindFirstChild("Torque") then
+                    v:FindFirstChild("Torque"):Destroy()
+                end
+                for _, part in next, v:GetDescendants() do
+                    if part:IsA("BasePart") then
+                        part.CanCollide = false
+                        local Torque = Instance.new("Torque", part)
+                        Torque.Torque = Vector3.new(1000 * 102, 100000 * 102, 10000 * 12)
+                        local AlignPosition = Instance.new("AlignPosition", part)
+                        local Attachment2 = Instance.new("Attachment", part)
+                        Torque.Attachment0 = Attachment2
+                        AlignPosition.MaxForce = 99999
+                        AlignPosition.MaxVelocity = math.huge
+                        AlignPosition.Responsiveness = 200
+                        AlignPosition.Attachment0 = Attachment2
+                        AlignPosition.Attachment1 = Attachment1
+                    end
+                end
+            end
+        end
+
+        for _, v in next, game:GetService("Workspace"):GetDescendants() do
+            ForceVehicle(v)
+        end
+
+        game:GetService("Workspace").DescendantAdded:Connect(function(v)
+            ForceVehicle(v)
+        end)
+
+        spawn(function()
+            while true do
+                if selectedPlayerName then
+                    local player = Players:FindFirstChild(selectedPlayerName)
+                    if player and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+                        local rootPart = player.Character.HumanoidRootPart
+                        Attachment1.WorldCFrame = rootPart.CFrame
+                    end
+                end
+                RunService.RenderStepped:Wait()
+            end
+        end)
+
+        wait(4)
+
+        local targetPosition = Vector3.new(101, -446, -180)
+        player.Character.HumanoidRootPart.CFrame = CFrame.new(targetPosition)
+
+        local function onPlayerSeated(player)
+            if player and player.Character then
+                local humanoid = player.Character:FindFirstChild("Humanoid")
+                if humanoid and humanoid.SeatPart then
+                    if humanoid.SeatPart.Parent:IsA("VehicleSeat") then
+                        player.Character.HumanoidRootPart.CFrame = CFrame.new(targetPosition)
+                    end
+                end
+            end
+        end
+
+        game:GetService("Players").PlayerAdded:Connect(function(player)
+            if player.Name == selectedPlayerName then
+                player.CharacterAdded:Connect(function(character)
+                    local humanoid = character:WaitForChild("Humanoid")
+                    humanoid.Seated:Connect(function(_, seat)
+                        if seat then
+                            onPlayerSeated(player)
+                        end
+                    end)
+                end)
+            end
+        end)
+end}) 
+
+
+
+
+Tab:AddSection({"COPY AVATAR PLAYER "})
+
+
+local plrlel = {}
+
+for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+	if v.Name == game.Players.LocalPlayer.Name == false then
+    	table.insert(plrlel,v.Name)
+	end
+end
+
+local function APPLY_SKINTONE(Player)
+    local p = Player
+    local c = p.Character or p.CharacterAdded:Wait()
+    local h = c:FindFirstChildOfClass("Humanoid")
+
+    if not h then
+        warn("Humanoid not found!")
+        return
+    end
+
+    local bodyColors = c:FindFirstChildOfClass("BodyColors")
+
+    if not bodyColors then
+        warn("BodyColors not found!")
+        return
+    end
+
+    -- Get skin tone (use HeadColor or any other body part color)
+    local skinTone = bodyColors.HeadColor
+
+    -- Convert BrickColor to readable string
+    local skinToneName = skinTone.Name
+
+    -- Fire the RemoteEvent with the detected skin tone
+    local args = {
+        [1] = "skintone",
+        [2] = skinToneName
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+
+local function Wear(id)
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer("wear", id) end
+
+local function COPYCLOTHING(Player)
+    local p = Player
+    local c = p.Character or p.CharacterAdded:Wait()
+    local h = c:FindFirstChildOfClass("Humanoid")
+
+    if not h then
+        warn("Humanoid not found!")
+        return
+    end
+
+    local d = h:GetAppliedDescription()
+    local cIds = { d.Shirt, d.Pants, d.GraphicTShirt }
+    local done = false
+
+    task.spawn(function()
+        for _, id in ipairs(cIds) do
+            if id ~= 0 then
+                task.wait(1)
+                Wear(id)
+            end
+        end
+        done = true
+    end)
+
+    repeat task.wait() until done -- Ensure the function waits until completion
+end
+
+local function COPYBODYPART(Player)
+    local p = Player
+    local c = p.Character or p.CharacterAdded:Wait()
+    local h = c:FindFirstChildOfClass("Humanoid")
+
+    if not h then
+        warn("Humanoid not found!")
+        return
+    end
+
+    local d = h:GetAppliedDescription()
+    
+    local bIds = {
+        d.Torso,
+        d.RightArm,
+        d.LeftArm,
+        d.RightLeg,
+        d.LeftLeg,
+        d.Head
+    }
+
+    local done = false
+    task.spawn(function()
+        game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(
+            "CharacterChange",
+            bIds,
+            "LOLHUB"
+        )
+        done = true
+    end)
+
+    repeat task.wait(0.5) until done
+end
+
+        
+local function COPYACCESSORIES(Player)
+    local p = Player
+    local c = p.Character or p.CharacterAdded:Wait()
+    local h = c:FindFirstChildOfClass("Humanoid")
+
+    if not h then
+        warn("Humanoid not found!")
+        return
+    end
+
+    local d = h:GetAppliedDescription()
+    local aIds = {}
+
+    for _, aList in ipairs({
+        d.HatAccessory,
+        d.HairAccessory,
+        d.FaceAccessory,
+        d.NeckAccessory,
+        d.ShouldersAccessory,
+        d.FrontAccessory,
+        d.BackAccessory,
+        d.WaistAccessory
+        
+    }) do
+        for id in string.gmatch(aList, "%d+") do
+            table.insert(aIds, tonumber(id))
+        end
+    end
+
+    local done = false
+    task.spawn(function()
+        for _, id in ipairs(aIds) do
+            task.wait(0.6)
+            Wear(id)
+        end
+        done = true
+    end)
+
+    repeat task.wait() until done
+end
+
+
+
+local function START(displayName)
+    local player = nil
+    displayName = string.lower(displayName)
+    for _, plr in ipairs(game.Players:GetPlayers()) do
+        local playerNameLower = string.lower(plr.Name)
+        local playerDisplayNameLower = string.lower(plr.DisplayName)
+        if string.find(playerNameLower, displayName, 1, true) or string.find(playerDisplayNameLower, displayName, 1, true) then
+            player = plr
+            break
+        end
+    end
+
+    if player then
+   
+    COPYACCESSORIES(game.Players.LocalPlayer)
+    COPYACCESSORIES(player)
+    wait(0.1)
+    COPYBODYPART(player)
+    COPYCLOTHING(player)
+    APPLY_SKINTONE(player)
+
+end
+end
+
+local displayName = nil
+local h = Tab:AddDropdown({
+  Name = "Choose the player",
+  Description = "Select player <font color='rgb(200, 200, 200)'>to Copy Skin</font>",
+  Options = plrlel,
+  Default = "...",
+  Callback = function(Value)
+        displayName = Value
+    end
+})
+
+local button = Tab:AddButton({"COPY AVATAR PLAYER !", function()
+if displayName then
+print("copying avatar")
+
+START(displayName)
+
+end
+  end
+})
+local Tab = Window:MakeTab({"ITEMS", ""})
+
+Tab:AddButton({"GREEN CARD !", function()
+        local args = {
+            [1] = "PickingTools",
+            [2] = "KeyCardDarkGreen"
+        }
+        local remoteFunction = game:GetService("ReplicatedStorage").RE:FindFirstChild("1Too1l")
+        if remoteFunction then
+            remoteFunction:InvokeServer(unpack(args))
+        else
+            warn("Função remota '1Too1l' não encontrada em ReplicatedStorage.RE")
+        end
+    end
+})
+
+Tab:AddButton({"BLUE CARD !", function()
+        local args = {
+            [1] = "PickingTools",
+            [2] = "PowerKeyCard"
+        }
+        local remoteFunction = game:GetService("ReplicatedStorage").RE:FindFirstChild("1Too1l")
+        if remoteFunction then
+            remoteFunction:InvokeServer(unpack(args))
+        else
+            warn("Função remota '1Too1l' não encontrada em ReplicatedStorage.RE")
+        end
+    end
+})
+
+Tab:AddButton({"CANDLE !", function()
+        local args = {
+            [1] = "PickingTools",
+            [2] = "Arch"
+        }
+        local remoteFunction = game:GetService("ReplicatedStorage").RE:FindFirstChild("1Too1l")
+        if remoteFunction then
+            remoteFunction:InvokeServer(unpack(args))
+        else
+            warn("Função remota '1Too1l' não encontrada em ReplicatedStorage.RE")
+        end
+    end
+})
+Tab:AddButton({"CRYSTAL 1 !", function()
+        local args = {
+            [1] = "PickingTools",
+            [2] = "Crystals"
+        }
+        local remoteFunction = game:GetService("ReplicatedStorage").RE:FindFirstChild("1Too1l")
+        if remoteFunction then
+            remoteFunction:InvokeServer(unpack(args))
+        else
+            warn("Função remota '1Too1l' não encontrada em ReplicatedStorage.RE")
+        end
+    end
+})
+
+Tab:AddButton({"CRYSTAL 2 EGYPT !", function()
+        local args = {
+            [1] = "PickingTools",
+            [2] = "Crystal"
+        }
+        local remoteFunction = game:GetService("ReplicatedStorage").RE:FindFirstChild("1Too1l")
+        if remoteFunction then
+            remoteFunction:InvokeServer(unpack(args))
+        else
+            warn("Função remota '1Too1l' não encontrada em ReplicatedStorage.RE")
+        end
+    end
+})
+Tab:AddButton({"BOOK SECRET !", function()
+        local args = {
+            [1] = "PickingTools",
+            [2] = "AgencyBook"
+        }
+        local remoteFunction = game:GetService("ReplicatedStorage").RE:FindFirstChild("1Too1l")
+        if remoteFunction then
+            remoteFunction:InvokeServer(unpack(args))
+        else
+            warn("Função remota '1Too1l' não encontrada em ReplicatedStorage.RE")
+        end
+    end
+})
+
+Tab:AddButton({"OLD KEY !", function()
+        local args = {
+            [1] = "PickingTools",
+            [2] = "OldKey"
+        }
+        local remoteFunction = game:GetService("ReplicatedStorage").RE:FindFirstChild("1Too1l")
+        if remoteFunction then
+            remoteFunction:InvokeServer(unpack(args))
+        else
+            warn("Função remota '1Too1l' não encontrada em ReplicatedStorage.RE")
+        end
+    end
+})
+Tab:AddButton({"WEAPON !", function()
+        local args = {
+            [1] = "PickingTools",
+            [2] = "Assault"
+        }
+        local remoteFunction = game:GetService("ReplicatedStorage").RE:FindFirstChild("1Too1l")
+        if remoteFunction then
+            remoteFunction:InvokeServer(unpack(args))
+        else
+            warn("Função remota '1Too1l' não encontrada em ReplicatedStorage.RE")
+        end
+    end
+})
+
+Tab:AddButton({"SHOTGUN !", function()
+        local args = {
+            [1] = "PickingTools",
+            [2] = "Shotgun"
+        }
+        local remoteFunction = game:GetService("ReplicatedStorage").RE:FindFirstChild("1Too1l")
+        if remoteFunction then
+            remoteFunction:InvokeServer(unpack(args))
+        else
+            warn("Função remota '1Too1l' não encontrada em ReplicatedStorage.RE")
+        end
+    end
+})
+local Tab = Window:MakeTab({"TELEPORT", ""})
+
+
+Tab:AddButton({"TOOL TELEPORT", function()
+    mouse = game.Players.LocalPlayer:GetMouse() 
+
+tool = Instance.new("Tool") 
+
+tool.RequiresHandle = false 
+
+tool.Name = "ARCHON HUB | TOOL" 
+
+tool.Activated:connect(function() 
+
+local pos = mouse.Hit+Vector3.new(0,2.5,0) 
+
+pos = CFrame.new(pos.X,pos.Y,pos.Z) 
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos 
+
+end) 
+
+tool.Parent = game.Players.LocalPlayer.Backpack
+  end
+})
+
+Tab:AddButton({"TELEPORT HOUSE 6", function()
+local player = game.Players.LocalPlayer
+player.Character.HumanoidRootPart.CFrame = CFrame.new(-43, 21, -137)
+end})
+Tab:AddButton({"TELEPORT HOUSE 7", function()
+local player = game.Players.LocalPlayer
+player.Character.HumanoidRootPart.CFrame = CFrame.new(-40, 36, -137)
+end
+})
+
+Tab:AddButton({"TELEPORT HOUSE 11", function()
+local player = game.Players.LocalPlayer
+player.Character.HumanoidRootPart.CFrame = CFrame.new(-21, 40, 436)
+end
+})
+
+Tab:AddButton({"TELEPORT HOUSE 12", function()
+local player = game.Players.LocalPlayer
+player.Character.HumanoidRootPart.CFrame = CFrame.new(155, 37, 433)
+end
+})
+
+Tab:AddButton({"TELEPORT HOUSE 13", function()
+local player = game.Players.LocalPlayer
+player.Character.HumanoidRootPart.CFrame = CFrame.new(255, 35, 431)
+end
+})
+
+Tab:AddButton({"TELEPORT HOUSE 14", function()
+local player = game.Players.LocalPlayer
+player.Character.HumanoidRootPart.CFrame = CFrame.new(254, 38, 394)
+end
+})
+
+Tab:AddButton({"TELEPORT HOUSE 15", function()
+local player = game.Players.LocalPlayer
+player.Character.HumanoidRootPart.CFrame = CFrame.new(148, 39, 387)
+end
+})
+
+Tab:AddButton({"TELEPORT HOUSE 16", function()
+local player = game.Players.LocalPlayer
+player.Character.HumanoidRootPart.CFrame = CFrame.new(-17, 42, 395)
+end
+})
+
+Tab:AddButton({"TELEPORT HOUSE 17", function()
+local player = game.Players.LocalPlayer
+player.Character.HumanoidRootPart.CFrame = CFrame.new(-189, 37, -247)
+end
+})
+
+Tab:AddButton({"TELEPORT HOUSE 18", function()
+local player = game.Players.LocalPlayer
+player.Character.HumanoidRootPart.CFrame = CFrame.new(-354, 37, -244)
+end
+})
+
+Tab:AddButton({"TELEPORT HOUSE 19", function()
+local player = game.Players.LocalPlayer
+player.Character.HumanoidRootPart.CFrame = CFrame.new(-456, 36, -245)
+end
+})
+
+Tab:AddButton({"TELEPORT HOUSE 20", function()
+local player = game.Players.LocalPlayer
+player.Character.HumanoidRootPart.CFrame = CFrame.new(-453, 38, -295)
+end
+})
+
+Tab:AddButton({"TELEPORT HOUSE 21 ", function()
+local player = game.Players.LocalPlayer
+player.Character.HumanoidRootPart.CFrame = CFrame.new(-356, 38, -294)
+end
+})
+
+Tab:AddButton({"TELEPORT HOUSE 22 ", function()
+local player = game.Players.LocalPlayer
+player.Character.HumanoidRootPart.CFrame = CFrame.new(-187, 37, -295)
+end
+})
+
+Tab:AddButton({"TELEPORT HOUSE 23 ", function()
+local player = game.Players.LocalPlayer
+player.Character.HumanoidRootPart.CFrame = CFrame.new(-410, 68, -447)
+end
+})
+
+Tab:AddButton({"TELEPORT 24 ", function()
+local player = game.Players.LocalPlayer
+player.Character.HumanoidRootPart.CFrame = CFrame.new(-348, 69, -496)
+end
+})
+
+Tab:AddButton({"TELEPORT HOUSE 28 ", function()
+local player = game.Players.LocalPlayer
+player.Character.HumanoidRootPart.CFrame = CFrame.new(-103, 12, 1087)
+end
+})
+
+Tab:AddButton({"TELEPORT 29 ", function()
+local player = game.Players.LocalPlayer
+player.Character.HumanoidRootPart.CFrame = CFrame.new(-730, 6, 808)
+end
+})
+
+Tab:AddButton({"TELEPORT HOUSE 30 ", function()
+local player = game.Players.LocalPlayer
+player.Character.HumanoidRootPart.CFrame = CFrame.new(-245, 7, 822)
+end
+})
+
+Tab:AddButton({"TELEPORT HOUSE 31 ", function()
+local player = game.Players.LocalPlayer
+player.Character.HumanoidRootPart.CFrame = CFrame.new(639, 76, -361)
+end
+})
+
+Tab:AddButton({"TELEPORT HOUSE 32 ", function()
+local player = game.Players.LocalPlayer
+player.Character.HumanoidRootPart.CFrame = CFrame.new(-908, 6, -361)
+end
+})
+
+Tab:AddButton({"TELEPORT HOUSE 33 ", function()
+local player = game.Players.LocalPlayer
+player.Character.HumanoidRootPart.CFrame = CFrame.new(-111, 70, -417)
+end
+})
+
+Tab:AddButton({"TELEPORT HOUSE 34 ", function()
+local player = game.Players.LocalPlayer
+player.Character.HumanoidRootPart.CFrame = CFrame.new(230, 38, 569)
+end
+})
+
+Tab:AddButton({"TELEPORT HOUSE 35 ", function()
+local player = game.Players.LocalPlayer
+player.Character.HumanoidRootPart.CFrame = CFrame.new(-30, 13, 2209)
+end
+})
+
+Tab:AddButton({"TELEPORT HOUSE 36 ", function()
+local player = game.Players.LocalPlayer
+player.Character.HumanoidRootPart.CFrame = CFrame.new(248, 17, -2324)
+end
+})
+
+Tab:AddButton({"TELEPORT HOUSE 37 ", function()
+local player = game.Players.LocalPlayer
+player.Character.HumanoidRootPart.CFrame = CFrame.new(-1946, 38, 327)
+end
+})
+
+local Tab = Window:MakeTab({"HEAD & LEGS & BODYS", ""})
+
+Tab:AddSection({"HEADS "})
+
+Tab:AddButton({"HEAD EMO & ROBOT", function()
+    print("Clicked")local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 3210773801
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+  end
+})
+Tab:AddButton({"HEADLESS", function()
+    print("Clicked")local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 134082579
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+  end
+})
+
+Tab:AddButton({"CHEEKS", function()
+    print("Clicked")local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 746767604
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+  end
+})
+Tab:AddButton({"HEAD HALLOWEEN BLUE", function()
+    print("Clicked")local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 16580493236
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+  end
+})
+Tab:AddSection({"LEGS "})
+Tab:AddButton({"LEG BLACK BONE", function()
+    print("Clicked")local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 14547162578,
+        [5] = 1,
+        [6] = 1
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+  end
+})
+Tab:AddButton({"KOROBLOX", function()
+    print("Clicked")local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 139607718,
+        [5] = 1,
+        [6] = 1
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+  end
+})
+Tab:AddButton({"LEG GREY BONE", function()
+    print("Clicked")local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 17500249989,
+        [5] = 1,
+        [6] = 1
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+  end
+})
+Tab:AddButton({"BIG ROLL LEG", function()
+    print("Clicked")local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 3230472745,
+        [5] = 1,
+        [6] = 1
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+  end
+})
+Tab:AddButton({"LEG WHITE BONE", function()
+    print("Clicked")local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 2510271496,
+        [5] = 1,
+        [6] = 1
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+  end
+})
+Tab:AddSection({"BODYS GIRL'S "})
+Tab:AddButton({"BLUSH FASHION", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 96491916349570,
+[2] = 76683091425509,
+[3] = 75159926897589,
+[4] = 1,
+[5] = 1,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+
+Tab:AddButton({"FASHION DOLL", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 74302534603111,
+[2] = 76683091425509,
+[3] = 75159926897589,
+[4] = 1,
+[5] = 1,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+Tab:AddButton({"MODREN WOMAN", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 124754866635882,
+[2] = 76683091425509,
+[3] = 75159926897589,
+[4] = 1,
+[5] = 1,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+Tab:AddButton({"CHIBI DOLL", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 96491916349570,
+[2] = 14854350570,
+[3] = 14854350451,
+[4] = 1,
+[5] = 1,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+
+Tab:AddButton({"BADDIE DOLL", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 101577365085156,
+[2] = 121017849910260,
+[3] = 111571034664628,
+[4] = 1,
+[5] = 1,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+
+Tab:AddButton({"POP DOLL", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 18839824113,
+[2] = 18839824209,
+[3] = 18839824132,
+[4] = 1,
+[5] = 1,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+
+Tab:AddButton({"PIE DOLL", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 16214246112,
+[2] = 16214249513,
+[3] = 16214251181,
+[4] = 1,
+[5] = 1,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+
+Tab:AddButton({"Y2K GAL", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 15539008532,
+[2] = 15539008875,
+[3] = 15539008680,
+[4] = 15539008795,
+[5] = 15539011945,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+
+Tab:AddButton({"CHIBI PRESON", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 14861800638,
+[2] = 14861800626,
+[3] = 14861801452,
+[4] = 14861800627,
+[5] = 14861801454,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+Tab:AddSection({"BODYS BOYS "})
+Tab:AddButton({"S15 SKINNED", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 17754346388,
+[2] = 1,
+[3] = 1,
+[4] = 1,
+[5] = 1,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+
+Tab:AddButton({"THIN", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 92757812011061,
+[2] = 99519402284266,
+[3] = 115905570886697,
+[4] = 1,
+[5] = 1,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+
+Tab:AddButton({"COPY BODY", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 86499666,
+[2] = 27112039,
+[3] = 27112052,
+[4] = 27112068,
+[5] = 27112056,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+
+
+Tab:AddButton({"ROLL BODY", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 27112025,
+[2] = 27112039,
+[3] = 27112052,
+[4] = 3230472745,
+[5] = 3230470862,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+
+
+Tab:AddButton({"BOY GRSAN", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 79002721744296,
+[2] = 130832500504528,
+[3] = 70920002007780,
+[4] = 139028230447119,
+[5] = 117942829390472,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+
+
+
+Tab:AddButton({"STRONG { 1 }", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 18178775358,
+[2] = 18178775182,
+[3] = 18178775725,
+[4] = 18178777453,
+[5] = 18178775695,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+Tab:AddButton({"STRONG { 2 }", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 84807240273695,
+[2] = 140219297913849,
+[3] = 81910486748527,
+[4] = 126161096503611,
+[5] = 100229264383618,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+Tab:AddButton({"STRONG { 3 }", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 17810786797,
+[2] = 17810786572,
+[3] = 17810786775,
+[4] = 17810786516,
+[5] = 17810786562,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+Tab:AddButton({"STRONG { 4 }", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 132096540859662,
+[2] = 92965813863196,
+[3] = 129503145371077,
+[4] = 93918346320227,
+[5] = 99916193130053,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+Tab:AddButton({"STRONG { 5 }", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 106646306961776,
+[2] = 72951123742968,
+[3] = 81248622873061,
+[4] = 87666174812433,
+[5] = 95036381784666,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+Tab:AddButton({"STRONG { 6 }", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 18178775358,
+[2] = 18178775182,
+[3] = 18178775725,
+[4] = 18178777453,
+[5] = 18178775695,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+Tab:AddSection({"BIG BODYS "})
+
+Tab:AddButton({" BIG HUGE", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 81881085814072,
+[2] = 77616785544978,
+[3] = 89618098969398,
+[4] = 130887057643589,
+[5] = 80245769527311,
+[6] = 72279390678562
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+Tab:AddButton({"BIG SHORT", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 15976071359,
+[2] = 15976074123,
+[3] = 15976074883,
+[4] = 15976074171,
+[5] = 15976074125,
+[6] = 15976074135
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+Tab:AddButton({"BIG FAT", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 106800882836405,
+[2] = 88668275797583,
+[3] = 79115019295211,
+[4] = 130887057643589,
+[5] = 80245769527311,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+Tab:AddButton({"BIG WEAK", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 75845963517621,
+[2] = 114145242585232,
+[3] = 93358106465215,
+[4] = 130887057643589,
+[5] = 80245769527311,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+
+Tab:AddButton({"BIG STONE", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 15489582363,
+[2] = 15489584622,
+[3] = 15489584734,
+[4] = 15489584682,
+[5] = 15489582354,
+[6] = 15489582340
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+Tab:AddSection({"MINI BODYS "})
+
+Tab:AddButton({"MINI BABY", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 17267677772,
+[2] = 17267677732,
+[3] = 17267677707,
+[4] = 17267677652,
+[5] = 17267677787,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+Tab:AddButton({"MINI BLOCKEY", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 115547443206193,
+[2] = 89917056388404,
+[3] = 95385687881410,
+[4] = 132940983485655,
+[5] = 134244064776681,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+Tab:AddButton({"MINI", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 14579958702,
+[2] = 14579959062,
+[3] = 14579959191,
+[4] = 14579959249,
+[5] = 14579963667,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+end})
+
+Tab:AddButton({"MIDDLE MINI", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 77813057823038,
+[2] = 135110043370135,
+[3] = 116607813654019,
+[4] = 138966229804486,
+[5] = 128961183894053,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+
+Tab:AddButton({"SHORT MINI", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 120973199097564,
+[2] = 118345433416023,
+[3] = 112849465115864,
+[4] = 78321005147549,
+[5] = 106586789635639,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+Tab:AddButton({"MINI BOY", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 126267841602936,
+[2] = 77530451194918,
+[3] = 123471958406889,
+[4] = 117042768644173,
+[5] = 131948590344338,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+
+Tab:AddButton({"MINI GRIL", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 15282063616,
+[2] = 15282063632,
+[3] = 15282063615,
+[4] = 14538400463,
+[5] = 14538400387,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+Tab:AddSection({"STRANGE BODYS "})
+Tab:AddButton({" UPSIDE DOWN BODY", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 17061950321,
+[2] = 17061950752,
+[3] = 17061950749,
+[4] = 17061950868,
+[5] = 17061954240,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+
+Tab:AddButton({"CREEP BODY", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 16766192865,
+[2] = 16766190802,
+[3] = 16766190790,
+[4] = 16766190782,
+[5] = 16766190791,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+
+Tab:AddButton({"HURRY BODY", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 76534060681998,
+[2] = 109903598428352,
+[3] = 133112214757313,
+[4] = 74937392050818,
+[5] = 75210106631996,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+Tab:AddButton({"SERPINTINE BODY", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 18666976564,
+[2] = 18666976661,
+[3] = 18666976631,
+[4] = 18666976759,
+[5] = 18666976467,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+Tab:AddButton({"FAMOUS BODY", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 4908013767,
+[2] = 4924607824,
+[3] = 4924606646,
+[4] = 4924608321,
+[5] = 4924606646,
+[6] = 4924607176,
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+  end
+})
+Tab:AddButton({"CHAIR BODY", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 16872133248,
+[2] = 16872133982,
+[3] = 16872133723,
+[4] = 16872133730,
+[5] = 16872133733,
+[6] = 1
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+Tab:AddButton({"HAMSTER BODY", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 14898536974,
+[2] = 14898536957,
+[3] = 14898537277,
+[4] = 14898537300,
+[5] = 14898537292,
+[6] = 14898536975,
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+
+Tab:AddButton({"FIRE BODY", function()
+print("Clicked")local args = {
+[1] = "CharacterChange",
+[2] = {
+[1] = 2608539495,
+[2] = 2608537440,
+[3] = 2608534881,
+[4] = 2608538559,
+[5] = 2608536258,
+[6] = 12726967427
+},
+[3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+  end
+})
+
+
+
+local Tab = Window:MakeTab({"SKIN", ""})
+Tab:AddSection({"NEON A LITTLE"})
+Tab:AddButton({"ORANGE NEON", function()
+    local args = {
+    [1] = "RequestingEmmitersName",
+    [2] = "0004FreeOrange"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clea1rTool1s"):FireServer(unpack(args))
+  end
+})
+Tab:AddButton({"BLUE NEON", function()
+    local args = {
+    [1] = "RequestingEmmitersName",
+    [2] = "0006FreeBlue"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clea1rTool1s"):FireServer(unpack(args))
+  end
+})
+Tab:AddButton({"PRUPLE NEON", function()
+local args = {
+    [1] = "RequestingEmmitersName",
+    [2] = "0007FreePurple"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clea1rTool1s"):FireServer(unpack(args))
+  end
+})
+Tab:AddButton({"PINK NEON", function()
+local args = {
+    [1] = "RequestingEmmitersName",
+    [2] = "0008FreePink"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clea1rTool1s"):FireServer(unpack(args))
+  end
+})
+Tab:AddButton({"RED NEON", function()
+local args = {
+    [1] = "RequestingEmmitersName",
+    [2] = "0009FreeRed"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clea1rTool1s"):FireServer(unpack(args))
+  end
+})
+Tab:AddButton({"WHITE NEON", function()
+local args = {
+    [1] = "RequestingEmmitersName",
+    [2] = "0002FreeWhite"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clea1rTool1s"):FireServer(unpack(args))
+  end
+})
+
+Tab:AddSection({"BELTS  "})
+
+Tab:AddButton({"BLACK BELT", function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 17529187838,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+Tab:AddButton({"WHITE BELT GIRL", function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 17529190069,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+Tab:AddButton({"BELT BOY WHITE", function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 18273481158,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+Tab:AddButton({"BELT BLACK BOY", function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 15789289391,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+Tab:AddButton({"BELT RED GIRL", function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 70631911396049,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+Tab:AddButton({"BELT RED BOY", function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 114086147679267,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+Tab:AddButton({"BELT BLUE GIRL", function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 132494886878095,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+Tab:AddButton({"BELT BLUE BOY", function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 17557698994,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+Tab:AddButton({"BELT PINK GIRL", function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 94439523180912,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+
+Tab:AddSection({" HAND PURPORSES "})
+
+Tab:AddButton({"ENERGY MONSTER WHITE", function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 134120315011243,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+Tab:AddButton({"LIGHT WHITE", function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 18679213803,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+Tab:AddButton({"ENERGY MONSTER PINK", function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 90674886498829,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+Tab:AddButton({"AXE", function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 116536998067259,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+Tab:AddButton({"SPRAY BLACK ", function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 86792218369662,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+Tab:AddButton({"SPRAY WHITE", function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 72392852231467,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+Tab:AddButton({"IPHONE HAND", function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 107670184356291,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+Tab:AddButton({"MONEY HAND", function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 18444236012,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+Tab:AddSection({"COWBOY SECTION "})
+Tab:AddButton({"HAT BROWN", function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 15923060526,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+Tab:AddButton({"STARS", function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 139645578773715,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+Tab:AddButton({"BLACK HAT ", function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 92158771544863,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+Tab:AddButton({"WHITE COWBOY", function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 15923076836,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+Tab:AddButton({"AMERICAN HAT", function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 71166495168824,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+Tab:AddButton({"HAT USA", function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 29715011,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+Tab:AddButton({"PINK&WHITE HAT", function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 17826047479,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+Tab:AddButton({"WEAPON PLACE ", function()
+    local args = {
+    [1] = "wearWalkStyle",
+    [2] = 106821784389137,
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+})
+
+Tab:AddSection({"Transformations "})
+	Tab:AddButton({"HEROPRAEN", function()
+      		wait(0.1) do
+local args = {
+    [1] = "wear",
+    [2] = 12346875906
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+wait(0.1) do
+local args = {
+    [1] = "wear",
+    [2] = 4773930099
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+wait(0.1) do
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 14976595538,
+        [2] = 14976595831,
+        [3] = 14976595559,
+        [4] = 14976595617,
+        [5] = 14976595675,
+        [6] = 134082579
+    },
+    [3] = "Boy"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+end
+wait(0.1) do
+local args = {
+    [1] = "wear",
+    [2] = 18758840211
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+wait(0.6) do
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 134082579
+    },
+    [3] = "Roblox20"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+end
+wait(0.7) do
+local args = {
+    [1] = "wear",
+    [2] = 18908349386
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+end
+wait(0.9) do
+local character = game.Players.LocalPlayer.Character 
+
+
+local animationTrack = character.Animate.run.RunAnim
+animationTrack.AnimationId = "rbxassetid://10921244891"
+character.Animate.walk.WalkAnim.AnimationId = "rbxassetid://10921244891"
+character.Animate.jump.JumpAnim.AnimationId = "rbxassetid://10921242013"
+character.Animate.fall.FallAnim.AnimationId = "rbxassetid://"
+character.Animate.idle.Animation1.AnimationId = "rbxassetid://10921230744"
+character.Animate.idle.Animation2.AnimationId = "rbxassetid://10921232093"
+character.Animate.climb.ClimbAnim.AnimationId = "rbxassetid://"
+character.Animate.swim.Swim.AnimationId = "rbxassetid://"
+character.Animate.swimidle.SwimIdle.AnimationId = "rbxassetid://"
+end
+  	end    
+})
+Tab:AddButton({"STEAF ", function()
+      		wait(0.1) do
+local args = {
+    [1] = "wear",
+    [2] = 12346875906
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+wait(0.1) do
+local args = {
+    [1] = "wear",
+    [2] = 4773930099
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+wait(0.1) do
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 14976595538,
+        [2] = 14976595831,
+        [3] = 14976595559,
+        [4] = 14976595617,
+        [5] = 14976595675,
+        [6] = 134082579
+    },
+    [3] = "Boy"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+end
+wait(0.1) do
+local args = {
+    [1] = "wear",
+    [2] = 18758858043
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 134082579
+    },
+    [3] = "Roblox20"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+wait(0.8) do
+local args = {
+    [1] = "wear",
+    [2] = 12346875906
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 134082579
+    },
+    [3] = "Roblox20"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+end
+  	end    
+})
+Tab:AddButton({"SPIDER ", function()
+      		local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 17047437188,
+        [2] = 17047437378,
+        [3] = 17047437442,
+        [4] = 17047437366,
+        [5] = 17047437217,
+        [6] = 17047437225
+    },
+    [3] = "Boy"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+local args = {
+    [1] = "wear",
+    [2] = 16571270062
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+  	end    
+})
+Tab:AddButton({DINOSAUR", function()
+      		local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 3210533212,
+        [2] = 3203439803,
+        [3] = 3203438798,
+        [4] = 3203440611,
+        [5] = 3203443647,
+        [6] = 3203436750
+    },
+    [3] = "Boy"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+local args = {
+    [1] = "wear",
+    [2] = 3203444687
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+  	end    
+})
+Tab:AddButton({"BABY ", function()
+      		local args = {
+    [1] = "PickingTools",
+    [2] = "BabyBoy"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Too1l"):InvokeServer(unpack(args))
+local args = {
+    [1] = "CharacterSizeDown",
+    [2] = 5
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+local player = game.Players.LocalPlayer
+ 
+-- Function to equip all tools
+local function equipAllTools()
+    local backpack = player.Backpack
+    for _, item in pairs(backpack:GetChildren()) do
+        if item:IsA("Tool") then
+            item.Parent = player.Character
+        end
+    end
+end
+ 
+-- Call the function when needed, e.g., on a button click or game event
+equipAllTools()
+ 
+
+  	end    
+})
+Tab:AddButton({"CREEPER", function()
+      		wait(0.1) do
+      		local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 18637111456,
+        [2] = 18637111879,
+        [3] = 18637113685,
+        [4] = 18637113993,
+        [5] = 18637111141,
+        [6] = 134082579
+    },
+    [3] = "Boy"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+end
+wait(0.1) do
+local args = {
+    [1] = "wear",
+    [2] = 17550909315
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+wait(0.1) do
+local args = {
+    [1] = "wear",
+    [2] = 3736820411
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+wait(0.1) do
+local args = {
+    [1] = "wear",
+    [2] = 3892745340
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+wait(0.2) do
+local args = {
+    [1] = "wear",
+    [2] = 18760737103
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+  	end    
+})
+Tab:AddButton({"FRIDAY", function()
+      		local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 16178047998,
+        [2] = 16178059844,
+        [3] = 16178051545,
+        [4] = 16178051497,
+        [5] = 16178051469,
+        [6] = 16178048180
+    },
+    [3] = "Boy"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+wait(0.1) do
+local args = {
+    [1] = "wear",
+    [2] = 15568938922
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+ 
+end
+  	end    
+})
+Tab:AddButton({"GIRAFFE", function()
+      		local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 16766192865,
+        [2] = 17449272553,
+        [3] = 17449272421,
+        [4] = 17449274174,
+        [5] = 17449272828,
+        [6] = 134082579
+    },
+    [3] = "Boy"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+wait(0.2) do
+local args = {
+    [1] = "wear",
+    [2] = 430064625
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end
+wait(0.1) do
+local args = {
+    [1] = "wear",
+    [2] = 9304931059
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+ 
+end
+  	end    
+})
+Tab:AddButton({"FAT MAN", function()
+      		local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 108716627329168,
+        [2] = 71354838009971,
+        [3] = 136839017348018,
+        [4] = 79036034268250,
+        [5] = 127317284094477,
+        [6] = 0
+    },
+    [3] = "Boy"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+  	end    
+})
+Tab:AddButton({"CAT", function()
+      		local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 16766192865,
+        [2] = 16766190802,
+        [3] = 16766190790,
+        [4] = 16766190782,
+        [5] = 16766190791,
+        [6] = 134082579
+    },
+    [3] = "Boy"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+wait(0.2) do
+local args = {
+    [1] = "wear",
+    [2] = 6202818787
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+end
+wait(0.3) do
+local args = {
+    [1] = "CharacterSizeDown",
+    [2] = 0.5
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+end
+wait(0.4) do
+local args = {
+    [1] = "wear",
+    [2] = 7337878491
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+end
+wait(0.5) do
+local args = {
+    [1] = "wear",
+    [2] = 7337879396
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+end
+wait(0.6) do
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 134082579
+    },
+    [3] = "Roblox20"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+end
+  	end    
+})
+Tab:AddSection({"EMO HAIR DAMAGE "})
+
+Tab:AddButton({"BLACK DAMGE HAIR EMO | 1", function()
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 15294026484
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 15848163279
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 16127830905
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 15535076528
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+  end
+})
+
+Tab:AddButton({"BROWN DAMAGE HAIR | 2", function()
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 14627143022
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 15294036713
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 15847969469
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 15971158257
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+  end
+})
+
+Tab:AddButton({"WHITE DAMAGE HAIR | 3", function()
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 14627127264
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 15908583844
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 14808889186
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 15349539978
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+  end
+})
+Tab:AddButton({"BLACK DAMAGE HAIR | 4", function()
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 17559746476
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 12411026610
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 11531011270
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 15848163279
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 15422129985
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 15474881355
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+  end
+})
+Tab:AddButton({"BOLNDE DAMAGE HAIR | 5", function()
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 15848166908
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 15422142247
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 11386778657
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 12410997561
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+wait(1.0)
+
+local args = {
+    [1] = "wearWalkStyle",
+    [2] = 15294007958
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+  end
+})
+
+local Tab = Window:MakeTab({"MUSIC", ""})
+
+
+local Tab = Window:MakeTab({"SCRPITS", ""})
+
+
+local Tab = Window:MakeTab({"CAR", ""})
+
+
+local Tab = Window:MakeTab({"HOME", ""})
+
+
+
+
